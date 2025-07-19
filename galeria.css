@@ -1,0 +1,23 @@
+.div-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.div-grid{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 5%;
+}
+
+.imagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 200px;
+}
