@@ -1,3 +1,11 @@
+body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+}
+
 .div-principal{
     display: flex;
     justify-content: center;
@@ -8,7 +16,6 @@
 .div-grid{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    gap: 5%;
 }
 
 .imagem{
@@ -16,8 +23,40 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 5%;
+    margin: 1%;
+    border: 2px solid black;
+}
+
+.imagem:hover{
+    background-color: rgb(228, 228, 228);
+}
+
+.imagem h3{
+    font-family: monospace;
+    font-size: 20px;
+    text-decoration: underline;
 }
 
 img{
-    width: 200px;
+    height: 50%;
+    width: auto;
+}
+
+@media (max-width: 1300px){
+    .div-grid{
+        grid-template-columns: 33.33% 33.33% 33.33%;
+    }
+}
+
+@media (max-width: 1000px){
+    .div-grid{
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media (max-width: 700px){
+    .div-grid{
+        grid-template-columns: 100%;
+    }
 }
